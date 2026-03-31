@@ -37,7 +37,7 @@ The goal of this project is to analyze customer behavior and build a machine lea
 ---
 
 ## Project Structure
-'''
+```
 data/
 └── processed/
 ├── telco_churn_cleaned.csv
@@ -49,7 +49,7 @@ notebooks/
 ├── 03_exploratory_data_analysis.ipynb
 ├── 04_feature_engineering.ipynb
 └── 05_model_training.ipynb
-'''
+```
 
 ---
 
