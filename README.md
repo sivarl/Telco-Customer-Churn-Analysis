@@ -5,6 +5,11 @@ The goal of this project is to analyze customer behavior and build a machine lea
 
 ---
 
+## Business Problem
+Customer churn is a critical challenge for telecom companies, as acquiring new customers is more expensive than retaining existing ones. This project focuses on identifying customers who are likely to churn, enabling the business to take proactive retention actions and reduce revenue loss.
+
+---
+
 ## Project Workflow
 1. Data Loading and Understanding
 2. Data Cleaning
@@ -15,16 +20,18 @@ The goal of this project is to analyze customer behavior and build a machine lea
 ---
 
 ## Key Insights
-- Customers with higher monthly charges show higher churn
-- Long-term contracts reduce churn
-- Customers using more services tend to stay longer
-- Electronic check users have higher churn probability
+- Customers with higher monthly charges are more likely to churn
+- Long-term contracts significantly reduce churn probability
+- Customers using multiple services tend to have higher retention
+- Customers using electronic check payments show higher churn risk
 
 ---
 
 ## Model Details
 - Model: Logistic Regression
 - Evaluation Metric: ROC-AUC, Recall
+- Threshold Optimization: Adjusted classification threshold to improve recall and better identify potential churn customers
+- Handling Class Imbalance: Applied class_weight in Logistic Regression to address imbalance and improve model sensitivity towards churn class, resulting in higher recall and reduced false negatives
 
 ---
 
@@ -40,8 +47,8 @@ The goal of this project is to analyze customer behavior and build a machine lea
 ```
 data/
 └── processed/
-├── telco_churn_cleaned.csv
-└── telco_churn_features.csv
+  ├── telco_churn_cleaned.csv
+  └── telco_churn_features.csv
 
 notebooks/
 ├── 01_data_loading_and_understanding.ipynb
@@ -58,3 +65,8 @@ notebooks/
 - Perform hyperparameter tuning to optimize model performance
 - Improve recall for churn prediction by handling class imbalance more effectively
 - Explore deployment options using Flask or FastAPI for real-time predictions
+
+---
+
+## Business Impact
+The insights from this project can help businesses design targeted retention strategies, such as offering incentives to high-risk customers and promoting long-term contracts to reduce churn.
