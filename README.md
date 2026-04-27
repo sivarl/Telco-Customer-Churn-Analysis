@@ -43,7 +43,7 @@ Evaluation Metric: ROC-AUC, Recall
 - Logistic regression provided significantly higher recall(0.88)
 - Decision tree captured non-linear patterns but missed more churn customers
 
-[Full Model Notebook](notebooks/05_model_training.ipynb)
+[Full Model Notebook - model_training](notebooks/05_model_training.ipynb)
 
 Logistic Regression model was selected as the final model due to its higher recall and better suitability for churn prediction, where identifying at-risk customers is critical.
 
