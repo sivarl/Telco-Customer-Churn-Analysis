@@ -27,11 +27,22 @@ Customer churn is a critical challenge for telecom companies, as acquiring new c
 
 ---
 
-## Model Details
-- Model: Logistic Regression
-- Evaluation Metric: ROC-AUC, Recall
+## Model Development & Evaluation
+Evaluation Metric: ROC-AUC, Recall
+1. Logistic Regression
 - Threshold Optimization: Adjusted classification threshold to improve recall and better identify potential churn customers
 - Handling Class Imbalance: Applied class_weight in Logistic Regression to address imbalance and improve model sensitivity towards churn class, resulting in higher recall and reduced false negatives
+
+2. Decision Tree
+- Observed overfitting in the baseline model (very high training accuracy, low test performance)
+- Applied hyperparameter tuning (max_depth, min_samples_leaf) to control overfitting
+
+### Model Comparison
+- Logistic regression and decision tree achieved similar ROC-AUC (~0.84)
+- Logistic regression provided significantly higher recall(0.88)
+- Decision tree captured non-linear patterns but missed more churn customers
+
+Logistic Regression model was selected as the final model due to its higher recall and better suitability for churn prediction, where identifying at-risk customers is critical.
 
 ---
 
