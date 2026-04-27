@@ -1,7 +1,7 @@
 # Telco Customer Churn Prediction
 
 ## Objective
-The goal of this project is to analyze customer behavior and build a machine learning model to predict churn.
+The goal of this project is to analyze customer behavior and build a machine learning model to predict churn. Multiple models, including Logistic Regression and Decision Tree, were developed and evaluated, with a focus on improving recall to minimize missed churn cases.
 
 ---
 
@@ -41,6 +41,8 @@ Evaluation Metric: ROC-AUC, Recall
 - Logistic regression and decision tree achieved similar ROC-AUC (~0.84)
 - Logistic regression provided significantly higher recall(0.88)
 - Decision tree captured non-linear patterns but missed more churn customers
+
+Full Model Notebook : notebooks/05_model_training.ipynb
 
 Logistic Regression model was selected as the final model due to its higher recall and better suitability for churn prediction, where identifying at-risk customers is critical.
 
