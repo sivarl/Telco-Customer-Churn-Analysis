@@ -15,7 +15,8 @@ Customer churn is a critical challenge for telecom companies, as acquiring new c
 2. Data Cleaning
 3. Exploratory Data Analysis (EDA)
 4. Feature Engineering
-5. Model Training (Logistic Regression)
+5. Model Training (Logistic Regression & Decision Tree)
+6. Model Evaluation & Comparison
 
 ---
 
@@ -34,15 +35,15 @@ Evaluation Metric: ROC-AUC, Recall
 - Handling Class Imbalance: Applied class_weight in Logistic Regression to address imbalance and improve model sensitivity towards churn class, resulting in higher recall and reduced false negatives
 
 2. Decision Tree
-- Observed overfitting in the baseline model (very high training accuracy, low test performance)
-- Applied hyperparameter tuning (max_depth, min_samples_leaf) to control overfitting
+- Baseline decision tree severely overfit (training accuracy ~1.0)
+- Applied max_depth and min_samples_leaf to control overfitting and achieved better stable performance
 
 ### Model Comparison
 - Logistic regression and decision tree achieved similar ROC-AUC (~0.84)
 - Logistic regression provided significantly higher recall(0.88)
 - Decision tree captured non-linear patterns but missed more churn customers
 
-Full Model Notebook : notebooks/05_model_training.ipynb
+[Full Model Notebook](notebooks/05_model_training.ipynb)
 
 Logistic Regression model was selected as the final model due to its higher recall and better suitability for churn prediction, where identifying at-risk customers is critical.
 
