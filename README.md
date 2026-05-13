@@ -20,14 +20,6 @@ Customer churn is a critical challenge for telecom companies, as acquiring new c
 
 ---
 
-## Key Insights
-- Customers with higher monthly charges are more likely to churn
-- Long-term contracts significantly reduce churn probability
-- Customers using multiple services tend to have higher retention
-- Customers using electronic check payments show higher churn risk
-
----
-
 ## Model Development & Evaluation
 Evaluation Metric: ROC-AUC, Recall
 1. Logistic Regression
@@ -71,6 +63,29 @@ notebooks/
 ├── 04_feature_engineering.ipynb
 └── 05_model_training.ipynb
 ```
+
+---
+
+## Key Insights
+- Customers with higher monthly charges are more likely to churn
+- Long-term contracts significantly reduce churn probability
+- Customers using multiple services tend to have higher retention
+- Customers using electronic check payments show higher churn risk
+
+---
+
+## Power BI Dashboard
+Interactive dashboard created in Power BI to visualize key churn drivers identified during EDA and machine learning analysis.
+
+### Key Insights
+- Customers with month-to-month contracts show the highest churn rates
+- Higher monthly charges are associated with increased churn
+- Fiber optic internet users exhibit higher churn risk
+- Customers with shorter tenure periods are more likely to churn
+
+### Dashboard Preview
+
+![Telco Dashboard](images/telco_dashboard.png)
 
 ---
 
