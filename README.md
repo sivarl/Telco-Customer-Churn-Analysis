@@ -30,7 +30,7 @@ Evaluation Metric: ROC-AUC, Recall
 - Baseline decision tree severely overfit (training accuracy ~1.0)
 - Applied max_depth and min_samples_leaf to control overfitting and achieved better stable performance
 
-#### Model Comparison
+### Model Comparison
 - Logistic regression and decision tree achieved similar ROC-AUC (~0.84)
 - Logistic regression provided significantly higher recall(0.88)
 - Decision tree captured non-linear patterns but missed more churn customers
@@ -77,13 +77,13 @@ notebooks/
 ## Power BI Dashboard
 Interactive dashboard created in Power BI to visualize key churn drivers identified during EDA and machine learning analysis.
 
-#### Dashboard Highlights
+### Dashboard Highlights
 - Customers with month-to-month contracts show the highest churn rates
 - Higher monthly charges are associated with increased churn
 - Fiber optic internet users exhibit higher churn risk
 - Customers with shorter tenure periods are more likely to churn
 
-#### Dashboard Preview
+### Dashboard Preview
 
 ![Telco Dashboard](images/telco_dashboard.png)
 
